@@ -6,6 +6,11 @@ import kapitel_3.vl.IKey;
 import kapitel_3.vl.ReferenceKey;
 import kapitel_3.vl.SList;
 
+/*
+Lara Eck s2310238020
+files to exclude: BTree, AVLTree,SearchTree
+ */
+
 public class MySList extends kapitel_3.vl.SList{
 
     void printL(){ //useful for me
@@ -18,6 +23,7 @@ public class MySList extends kapitel_3.vl.SList{
 
     }
 
+    //Aufgabe 1
     void append(Object data){
         Node current=head;
         while(current.next != null ) {  // Iterate for all nodes
@@ -27,19 +33,43 @@ public class MySList extends kapitel_3.vl.SList{
 
     }
 
+    //Aufgabe 2
     boolean insert(Object prev, Object data){
 
-        //search here
         Node current=head;
-        if(current == null) {
-            return false;
+
+        while(current.next != null ) {//goes through the whole list if nothing is found
+            if(current.data.equals(prev)) {//checks if the node is the same
+                //insterting
+                Node temp=current.next;
+                current.next=new Node(data, temp);
+                //only inserts once
+                return true;
+            }
+            current = current.next;
         }
+        return false;
 
-        Node temp=current.next;
-        current.next=new Node(data, temp);
-
-        return true;
-
+    }
+    //Aufgabe 3
+    SList searchAll(IKey key){
+        SList list=new SList();
+        Node current=search(head, key);//finds first match or null
+        while(current != null ){
+            list.prepend(current.data);
+            current=search(current.next, key);
+        }
+        return list;
+    }
+    //I copied it and made it return a MySList so I can list it for testing
+    MySList searchAll1(IKey key){
+        MySList list=new MySList();
+        Node current=search(head, key);//finds first match or null
+        while(current != null ){
+            list.prepend(current.data);
+            current=search(current.next, key);
+        }
+        return list;
     }
 
 
@@ -52,19 +82,34 @@ public class MySList extends kapitel_3.vl.SList{
 
         Student student = new Student("Volker", "Christian", "MTD0100001");
         studentList.prepend(student);
-        Student student1 = new Student("Albert", "Einstein", "MTD0100002");
-        studentList.prepend(student1);
+        student = new Student("Albert", "Einstein", "MTD0100002");
+        studentList.prepend(student);
         student = new Student("Wolfgang", "Ambros", "MTD0100003");
 
-        //studentList.prepend(student);
+        //aufgabe1
         studentList.append(student);
+
+        //aufgabe2
+        StudentKeys.SurNameKey nameKey = new StudentKeys.SurNameKey("Christian");
+        Student student1 = (Student) studentList.search(nameKey);
 
         boolean test=studentList.insert(
                 student1
                 ,new Student("Alberto", "Malich", "MTD0100004")
         );
         System.out.println(test);
-        studentList.printL();
+        //studentList.printL();
+
+        //aufgabe3
+        student = new Student("Alberto", "Einstein", "MTD0100005");
+        studentList.prepend(student);
+        StudentKeys.SurNameKey nameKey1 = new StudentKeys.SurNameKey("Einstein");
+
+        //searchAll1 is the same as SearchAll (which works too) it just returns maslist instead of slist so i can print it for easy quick testing
+        MySList found=studentList.searchAll1(nameKey1);
+        //found.printL();
+
+
 
         /*
         StudentKeys.SurNameKey nameKey = new StudentKeys.SurNameKey("Einstein");
@@ -73,10 +118,6 @@ public class MySList extends kapitel_3.vl.SList{
             System.out.println(student);
         }
         */
-
-
-
-
 
 
     }
