@@ -15,10 +15,10 @@ public class MySList extends kapitel_3.vl.SList{
 
     void printL(){ //useful for me
         Node current=head;
-        while(current != null ) {  // Iterate for all nodes
+        while(current != null ) {
             System.out.println(current.data);
             System.out.println("-");
-            current = current.next; // Not found! Jump to the next node.
+            current = current.next;
         }
 
     }
@@ -84,9 +84,9 @@ public class MySList extends kapitel_3.vl.SList{
         studentList.prepend(student);
         student = new Student("Albert", "Einstein", "MTD0100002");
         studentList.prepend(student);
-        student = new Student("Wolfgang", "Ambros", "MTD0100003");
 
         //aufgabe1
+        student = new Student("Wolfgang", "Ambros", "MTD0100003");
         studentList.append(student);
 
         //aufgabe2
@@ -97,7 +97,7 @@ public class MySList extends kapitel_3.vl.SList{
                 student1
                 ,new Student("Alberto", "Malich", "MTD0100004")
         );
-        System.out.println(test);
+        //System.out.println(test);
         //studentList.printL();
 
         //aufgabe3
@@ -105,7 +105,7 @@ public class MySList extends kapitel_3.vl.SList{
         studentList.prepend(student);
         StudentKeys.SurNameKey nameKey1 = new StudentKeys.SurNameKey("Einstein");
 
-        //searchAll1 is the same as SearchAll (which works too) it just returns maslist instead of slist so i can print it for easy quick testing
+        //searchAll1 is the same as SearchAll (which works too) it just returns myslist instead of slist so I can print it for quick feedback
         MySList found=studentList.searchAll1(nameKey1);
         //found.printL();
 
