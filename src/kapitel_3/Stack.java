@@ -1,4 +1,4 @@
-package UE2;
+package kapitel_3;
 
 import kapitel_3.vl.SList;
 

@@ -1,6 +1,5 @@
-package UE2;
+package kapitel_3;
 
-import kapitel_3.Queue;
 import kapitel_3.vl.BTree;
 
 public class MyBTree extends BTree{
@@ -34,9 +33,23 @@ public class MyBTree extends BTree{
     }
     public void insert(Object data) {
         //copied and edited breadthFirstAppend
-        Queue queue = new Queue();                   // The helper-queue
         Node newNode = new Node(null, data, null);
         breadthFirstAppend(newNode);
     }
+
+    protected void remove(Node node){
+        
+    }
+    public void remove(Object data){
+
+    }
+
+
+
+
+
+
+
+
 }
 

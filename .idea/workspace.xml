@@ -4,11 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1aa365bf-8a16-4193-9982-0d5480b13207" name="Changes" comment="still needs testing">
-      <change afterPath="$PROJECT_DIR$/src/UE2/MyBTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/UE2/Stack.java" afterDir="false" />
+    <list default="true" id="1aa365bf-8a16-4193-9982-0d5480b13207" name="Changes" comment="ue4 done">
+      <change afterPath="$PROJECT_DIR$/src/kapitel_3/Heap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/kapitel_3/ue5.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UE2/ue4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UE2/MyBTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kapitel_3/MyBTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/UE2/Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kapitel_3/Stack.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -69,6 +70,9 @@
       <recent name="UE2" />
       <recent name="kapitel_3.vl" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="kapitel_3" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="UE2" />
     </key>
@@ -93,7 +97,7 @@
       <workItem from="1732875881319" duration="10634000" />
       <workItem from="1733142854062" duration="25000" />
       <workItem from="1733655162097" duration="11522000" />
-      <workItem from="1733759047563" duration="1624000" />
+      <workItem from="1733759047563" duration="4087000" />
     </task>
     <task id="LOCAL-00001" summary="during ue">
       <option name="closed" value="true" />
@@ -127,7 +131,15 @@
       <option name="project" value="LOCAL" />
       <updated>1732886484837</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="ue4 done">
+      <option name="closed" value="true" />
+      <created>1733760744552</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1733760744552</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -138,6 +150,7 @@
     <MESSAGE value="during 2" />
     <MESSAGE value="all but aufgabe 4 and the testing, done" />
     <MESSAGE value="still needs testing" />
-    <option name="LAST_COMMIT_MESSAGE" value="still needs testing" />
+    <MESSAGE value="ue4 done" />
+    <option name="LAST_COMMIT_MESSAGE" value="ue4 done" />
   </component>
 </project>
