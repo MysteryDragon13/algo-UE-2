@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1aa365bf-8a16-4193-9982-0d5480b13207" name="Changes" comment="ue4 done">
-      <change afterPath="$PROJECT_DIR$/src/kapitel_3/Heap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/kapitel_3/ue5.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UE2/MyBTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kapitel_3/MyBTree.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/UE2/Stack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kapitel_3/Stack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/kapitel_3/ue5.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/kapitel_3/priorityQueue.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,6 +95,7 @@
       <workItem from="1733142854062" duration="25000" />
       <workItem from="1733655162097" duration="11522000" />
       <workItem from="1733759047563" duration="4087000" />
+      <workItem from="1734442756024" duration="1866000" />
     </task>
     <task id="LOCAL-00001" summary="during ue">
       <option name="closed" value="true" />
